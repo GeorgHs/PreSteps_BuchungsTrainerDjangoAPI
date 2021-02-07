@@ -1,0 +1,34 @@
+{
+  "name": "PreSteps_BuchungsTrainerDjangoAPI",
+  "version": "1.0.0",
+  "description": "Django React API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgHs/PreSteps_BuchungsTrainerDjangoAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgHs/PreSteps_BuchungsTrainerDjangoAPI/issues"
+  },
+  "homepage": "https://github.com/GeorgHs/PreSteps_BuchungsTrainerDjangoAPI#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^5.21.1",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
