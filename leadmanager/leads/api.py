@@ -6,7 +6,7 @@ from .serializers import LeadSerializer
 class LeadViewSet(viewsets.ModelViewSet):
     queryset = Lead.objects.all()
     permissions = [
-        permissions.IsAuthenticated
+        permissions.IsAuthenticated,
     ]
     serializer_class = LeadSerializer
 
@@ -17,6 +17,3 @@ def get_queryset(self):
 
 def perform_create(self, serializer):
     serializer.save(owner=self.request.user)
-
-
-serializer_class = LeadSerializer
