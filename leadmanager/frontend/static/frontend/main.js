@@ -378,7 +378,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createMessage\": () => (/* binding */ createMessage)\n/* harmony export */ });\n/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ \"./leadmanager/frontend/src/actions/types.js\");\n // Create Message\n\nvar createMessage = function createMessage(msg) {\n  return {\n    type: _types__WEBPACK_IMPORTED_MODULE_0__.CREATE_MESSAGE,\n    payload: msg\n  };\n};\n\n//# sourceURL=webpack://PreSteps_BuchungsTrainerDjangoAPI/./leadmanager/frontend/src/actions/messages.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createMessage\": () => (/* binding */ createMessage)\n/* harmony export */ });\n/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ \"./leadmanager/frontend/src/actions/types.js\");\n // Create Message\n\nvar createMessage = function createMessage(msg) {\n  return {\n    type: _types__WEBPACK_IMPORTED_MODULE_0__.CREATE_MESSAGE,\n    payload: {\n      msg: msg\n    }\n  };\n};\n\n//# sourceURL=webpack://PreSteps_BuchungsTrainerDjangoAPI/./leadmanager/frontend/src/actions/messages.js?");
 
 /***/ }),
 

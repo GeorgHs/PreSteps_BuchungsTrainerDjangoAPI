@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { GET_LEADS, DELETE_LEAD, ADD_LEAD, GET_ERRORS } from './types'
 
-import { createMessage } from './messages';
+import { createMessage, returnErrors } from './messages';
 
 // ADD LEAD
 export const addLead = (lead) => dispatch => {
@@ -21,7 +21,7 @@ export const getLeads = () => dispatch => {
             type: GET_LEADS,
             payload: res.data
         });
-    }).catch(err => console.log(err))
+    }).catch(err => dispatch(returnErrors(err.response.data, err.response.status)))
 };
 
 // DELETE LEAD
